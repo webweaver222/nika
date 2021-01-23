@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./Components/app";
+import App from "../src/Components/app";
 import GlobalStyles from "./Components/globalStyles";
+import { BrowserRouter } from "react-router-dom";
 
 const entryBlock = document.getElementById("root");
 const renderFunction: ReactDOM.Renderer = entryBlock.hasChildNodes()
@@ -10,9 +11,9 @@ const renderFunction: ReactDOM.Renderer = entryBlock.hasChildNodes()
   : ReactDOM.render;
 
 renderFunction(
-  <>
+  <BrowserRouter>
     <GlobalStyles />
     <App />{" "}
-  </>,
+  </BrowserRouter>,
   entryBlock
 );

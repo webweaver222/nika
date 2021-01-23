@@ -1,20 +1,22 @@
 import React from "react";
-import IndexWrapper from "./indexWrapper";
+import { Switch, Route, withRouter } from "react-router-dom";
+import { Pages } from "../pages/Routes";
 
-import Header from "../header";
-import Projects from "../Projects";
-
-const App = () => {
+const App = function App() {
   return (
-    <IndexWrapper>
-      <Header />
-      <Projects />
-      {/**
-         <Header />
-         <Projects/>
-         */}
-    </IndexWrapper>
+    <Switch>
+      {Pages.map((page, index) => {
+        return (
+          <Route
+            exact
+            path={page.link}
+            component={page.component}
+            key={index}
+          />
+        );
+      })}
+    </Switch>
   );
 };
 
-export default App;
+export default withRouter(App);

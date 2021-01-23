@@ -2,7 +2,7 @@ import fs from "fs";
 import express from "express";
 import React from "react";
 import { renderToNodeStream } from "react-dom/server";
-
+import { StaticRouter } from "react-router-dom";
 import { Html } from "./Html/Server";
 
 import { ServerStyleSheet } from "styled-components";
@@ -17,13 +17,21 @@ fs.readdirSync("./dist/assets").forEach((file) => {
   if (file.split(".").pop() === "js") jsFiles.push("/assets/" + file);
 });
 
+server.use(
+  "/favicon.ico",
+  express.static("./src/resources/images/favicon.ico")
+);
 server.use("/assets", express.static("./dist/assets"));
 
 server.get("*", async (req, res) => {
+  console.log(req.url);
+
   const sheet = new ServerStyleSheet();
   const jsx = sheet.collectStyles(
     <Html scripts={jsFiles}>
-      <App />
+      <StaticRouter location={req.url} context={{}}>
+        <App />
+      </StaticRouter>
     </Html>
   );
 

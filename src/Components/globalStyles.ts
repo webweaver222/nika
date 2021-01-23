@@ -58,15 +58,15 @@ a {
 }
 
 @keyframes fadeInUp {
-    from {opacity: 0; bottom: -90px;}
+    from {opacity: 0; bottom: -120px;}
         
-    to  { opacity: 1; bottom: -50px;}  
+    to  { opacity: 1; bottom: -65px;}  
 }
 
 @keyframes fadeInDown {
-    from {opacity: 0; top: -90px;}
+    from {opacity: 0; top: -120px;}
         
-    to  { opacity: 1; top: -50px;}  
+    to  { opacity: 1; top: -65px;}  
 }
 
 @font-face {
