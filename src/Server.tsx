@@ -9,7 +9,7 @@ import { ServerStyleSheet } from "styled-components";
 
 import App from "./Components/app";
 
-const port = 3000;
+const port = 8082;
 const server = express();
 const jsFiles: Array<string> = [];
 
