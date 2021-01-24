@@ -5,6 +5,8 @@ import App from "../src/Components/app";
 import GlobalStyles from "./Components/globalStyles";
 import { BrowserRouter } from "react-router-dom";
 
+import "./Html/scripts";
+
 const entryBlock = document.getElementById("root");
 const renderFunction: ReactDOM.Renderer = entryBlock.hasChildNodes()
   ? ReactDOM.hydrate
@@ -13,7 +15,7 @@ const renderFunction: ReactDOM.Renderer = entryBlock.hasChildNodes()
 renderFunction(
   <BrowserRouter>
     <GlobalStyles />
-    <App />{" "}
+    <App />
   </BrowserRouter>,
   entryBlock
 );

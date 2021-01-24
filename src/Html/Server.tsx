@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from "../Components/loader";
 
 interface Html {
   scripts: Array<string>;
@@ -17,10 +18,14 @@ export function Html({ children, scripts }: React.PropsWithChildren<Html>) {
         <title>React Starter Pack</title>
       </head>
       <body>
-        <div id="root">{children}</div>
-        {scripts.map((script, index) => (
-          <script src={script} key={index} />
-        ))}
+        <Loader />
+        <div id="root" style={{ visibility: "hidden" }}>
+          {children}
+        </div>
+        {scripts.map((script, index) => {
+          console.log(script);
+          return <script src={script} key={index} />;
+        })}
       </body>
     </html>
   );

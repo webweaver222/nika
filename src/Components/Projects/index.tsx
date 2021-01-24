@@ -1,4 +1,6 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+import { History } from "history";
 
 import ProjectsWrapper from "./projectsWrapper";
 import { useInView } from "react-intersection-observer";
@@ -6,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 import easycycle1 from "../../resources/images/easycycle1.png";
 import easycycle2 from "../../resources/images/easycycle2.png";
 
-const Projects: React.FunctionComponent = () => {
+const Projects = ({ history }: { history: History }) => {
   const { ref: easyCycleRef, inView: easyCycleInView } = useInView({
     /* Optional options */
     threshold: 0.33,
@@ -17,9 +19,7 @@ const Projects: React.FunctionComponent = () => {
       <div
         className="project easycycle"
         ref={easyCycleRef}
-        onClick={() =>
-          window.location.replace(`${window.location.origin}/easycycle`)
-        }
+        onClick={() => history.push("easycycle")}
       >
         <div className="project-text">
           <h2>Easycycle - </h2>
@@ -36,4 +36,4 @@ const Projects: React.FunctionComponent = () => {
   );
 };
 
-export default Projects;
+export default withRouter(Projects);
