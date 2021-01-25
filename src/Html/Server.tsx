@@ -18,7 +18,9 @@ export function Html({ children, scripts }: React.PropsWithChildren<Html>) {
         <title>React Starter Pack</title>
       </head>
       <body>
-        <Loader />
+        <div id="loader">
+          <Loader />
+        </div>
         <div id="root" style={{ visibility: "hidden" }}>
           {children}
         </div>

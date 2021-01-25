@@ -45,7 +45,7 @@ const LoaderWrapper = styled.div`
 
 const Loader = () => {
   return (
-    <LoaderWrapper id="loader">
+    <LoaderWrapper>
       <div className="lds-ripple">
         <div></div>
         <div></div>

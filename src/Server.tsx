@@ -13,8 +13,6 @@ const port = 8082;
 const server = express();
 const jsFiles: Array<string> = [];
 
-//jsFiles.push("./test.ts");
-
 fs.readdirSync("./dist/assets").forEach((file) => {
   if (file.split(".").pop() === "js") jsFiles.push("/assets/" + file);
 });
