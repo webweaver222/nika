@@ -4,7 +4,7 @@ import styled from "styled-components";
 const LoaderWrapper = styled.div`
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   .lds-ripple {
     display: inline-block;
@@ -45,7 +45,7 @@ const LoaderWrapper = styled.div`
 
 const Loader = () => {
   return (
-    <LoaderWrapper id="loader">
+    <LoaderWrapper>
       <div className="lds-ripple">
         <div></div>
         <div></div>
