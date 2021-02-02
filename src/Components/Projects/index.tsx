@@ -2,11 +2,14 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import { History } from "history";
 
-import ProjectsWrapper from "./projectsWrapper";
+import EasyCycle from "./easyCycle";
+import Megasport from "./megasport";
 import { useInView } from "react-intersection-observer";
 
-import easycycle1 from "../../resources/images/easycycle1.png";
-import easycycle2 from "../../resources/images/easycycle2.png";
+import easycycle1 from "resources/images/easycycle/easycycle1.png";
+import easycycle2 from "resources/images/easycycle/easycycle2.png";
+import megasport1 from "resources/images/megasport/megasport1.png";
+import megasport2 from "resources/images/megasport/megasport2.png";
 
 const Projects = ({ history }: { history: History }) => {
   const { ref: easyCycleRef, inView: easyCycleInView } = useInView({
@@ -14,10 +17,15 @@ const Projects = ({ history }: { history: History }) => {
     threshold: 0.33,
   });
 
+  const { ref: megasportRef, inView: megasportInView } = useInView({
+    /* Optional options */
+    threshold: 0.33,
+  });
+
   return (
-    <ProjectsWrapper easyCycleInView={easyCycleInView}>
-      <div
-        className="project easycycle"
+    <>
+      <EasyCycle
+        easyCycleInView={easyCycleInView}
         ref={easyCycleRef}
         onClick={() => history.push("easycycle")}
       >
@@ -27,12 +35,46 @@ const Projects = ({ history }: { history: History }) => {
         </div>
 
         <div className="project-images">
-          <img src={easycycle1} alt="easycycle1" className="easycycle1" />
-          <img src={easycycle2} alt="easycycle2" className="easycycle2" />
+          <img
+            src={easycycle1}
+            alt="easycycle1"
+            className="section-img easycycle1"
+          />
+          <img
+            src={easycycle2}
+            alt="easycycle2"
+            className="section-img easycycle2"
+          />
         </div>
         <div className="project-shading"></div>
-      </div>
-    </ProjectsWrapper>
+      </EasyCycle>
+
+      {/*///////////////////////////////////////////////////////////////////////////////////////// */}
+      <Megasport
+        ref={megasportRef}
+        megasportInView={megasportInView}
+        onClick={() => history.push("megasport")}
+      >
+        <div className="project-text">
+          <h2>MEGASPORT</h2>
+          <p>E-commerce mobile app</p>
+        </div>
+
+        <div className="project-images">
+          <img
+            src={megasport1}
+            alt="megasport1"
+            className="section-img megasport1"
+          />
+          <img
+            src={megasport2}
+            alt="megasport2"
+            className="section-img megasport2"
+          />
+        </div>
+        <div className="project-shading"></div>
+      </Megasport>
+    </>
   );
 };
 

@@ -14,7 +14,8 @@ interface Route {
     | React.FC;
 }
 
-import easyCycle from "resources/images/easycycleBig.png";
+import easyCycle from "resources/images/easycycle/easycycleBig.png";
+import megasport from "resources/images/megasport/megasportBig.png";
 
 export const Pages: Array<Route> = [
   {
@@ -26,5 +27,10 @@ export const Pages: Array<Route> = [
     link: "/easycycle",
     title: "Project",
     component: () => <Project imgUrl={easyCycle} />,
+  },
+  {
+    link: "/megasport",
+    title: "Project",
+    component: () => <Project imgUrl={megasport} />,
   },
 ];
