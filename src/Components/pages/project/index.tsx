@@ -6,6 +6,7 @@ const ProjectWrapper = styled.div`
   img {
     width: 100%;
     visibility: ${(props) => (props.loaded ? "visible" : "hidden")};
+    animation: fadein 0.8s ease;
   }
 `;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ProjectsWrapper = styled.div`
-  //margin-top: 20px;
+  margin-top: 20px;
 
   .easycycle {
     background-color: #d64847;

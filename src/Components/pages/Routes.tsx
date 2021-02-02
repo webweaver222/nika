@@ -14,7 +14,7 @@ interface Route {
     | React.FC;
 }
 
-import easyCycle from "../../resources/images/easycycleBig.png";
+import easyCycle from "resources/images/easycycleBig.png";
 
 export const Pages: Array<Route> = [
   {

@@ -43,12 +43,7 @@ module.exports = (env) => {
 
   const resolve = {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
-    alias: {
-      // Тут тот же момент, что и в tsconfig.json, чтобы Webpack смог понять ссылки на директории
-      App: path.resolve(__dirname, "src/App/"),
-      Pages: path.resolve(__dirname, "src/Pages/"),
-      Resources: path.resolve(__dirname, "src/resources/"),
-    },
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
   };
 
   return {
