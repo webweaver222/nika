@@ -1,70 +1,170 @@
 import styled from "styled-components";
 
-import img from "../../resources/images/header-bg.jpg";
+import line from "resources/images/header/line.png";
 
 const HeaderWrapper = styled.div`
   height: 100vh;
-  flex-direction: column;
+  display: flex;
+  font-family: "mont-bold";
+  color: #231f20;
+  position: relative;
+  
 
   header {
-    padding: 40px 0;
-  }
-
-  .brand {
-    font-family: "mont-bold";
-    span {
-      font-family: "mont-reg";
-      color: var(--gray);
-    }
-  }
-
-  nav.menu {
-    font-size: 18px;
-    ul {
-      display: flex;
-    }
-
-    li a {
-      color: var(--gray);
-      margin: 0 10px;
-    }
-
-    li.current a {
-      color: black;
-    }
-  }
-
-  main {
-    flex: 1 1;
-    position: relative;
-    z-index: 0;
-    background-color: rgb(232, 154, 30);
-  }
-
-  main .header-text p {
-    font-size: 25px;
-    line-height: 34px;
-  }
-
-  main::after {
-    content: "";
-    z-index: -1;
     position: absolute;
-    height: 100%;
     width: 100%;
     top: 0;
-    left: 0;
-    background-color: rgb(232, 154, 30);
-    background-image: url(${img});
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-    animation: fadein 1.5s ease;
+    display: flex;
+    z-index:6;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 64px 200px 0 200px;
+
+    .logo-text {
+      color: #c8c8c8;
+      font-size: 14px;
+      
+    }
+
+    nav {
+     
+        span {
+          margin-right: 30px;
+          padding: 10px;
+          cursor: pointer;
+
+          :last-child {
+            margin-right: 0px;
+          }
+
+          :hover {
+            border-bottom: 3px solid red;
+          }
+        }
+    }
   }
 
-  @media only screen and (max-width: 992px) {
-    main {
-      background-size: cover;
+  .flex-composition {
+    margin: auto 0;
+    padding: 0 100px;
+  }
+
+  .welcome, .description {
+    font-family: "mont-reg";
+    font-size: 18px;
+    padding-left: 100px;
+  }
+
+  .designer-composition {
+    font-size: 115px;
+    margin-top: 21px;
+
+    .uiux, .designer {
+      position: relative;
+      z-index: 0;
+      padding-left: 95px;
+
+      ::before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        width: 698px;
+        height: 1px;
+        bottom: 15px;
+        left: 0;
+        background-image: url(${line});
+      }
+
+    }   
+    }
+
+    .uiux {
+      text-transform: uppercase;
+
+      span {
+        position: relative;
+        z-index: 5;
+      }
+
+      ::before {
+        top: 17px;
+      }
+    }
+
+    .designer {
+
+      .i-letter {
+        position: relative;
+
+        ::before {
+          position: absolute;
+          content: '';
+          width: 23px;
+          height: 21px;
+          border-radius: 50%;
+          background-color: #ff2f37;
+          top: 19px;
+          left: 6px;
+        }
+      }
+
+      .g-letter {
+        position: relative;
+        z-index: 5
+      }
+    }
+  }
+
+  p.description {
+    margin-top: 32px;
+    max-width: 700px;
+    line-height: 32px;
+
+  }
+
+  p.description-long {
+    margin-top: 0;
+    max-width: 800px;
+  }
+
+
+
+  .vertical-banner {
+    position: absolute;
+    z-index: 0;
+    right: 23%;
+    top: 50%;
+    transform:translate(0, -50%);
+
+    img {
+      width: 189px;
+      height: 638px;
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+
+    header {
+      padding-left: 250px;
+      padding-right: 250px;
+    }
+
+    .flex-composition {
+      padding: 0 150px;
+      .designer {
+        ::before{
+          bottom: 16px;
+        }
+      }
+    }
+
+    .vertical-banner {
+      img {
+        width: calc(189px * 1.25);
+        height: calc(638px * 1.25);
+      }
+     
+      right: 19%;
     }
   }
 `;
