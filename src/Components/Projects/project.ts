@@ -19,12 +19,15 @@ const Project = styled.div`
     h2 {
       font-size: 40px;
       letter-spacing: 3px;
+      font-family: "mont-bold";
+      margin-bottom: 25px;
     }
     p {
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 25px;
       padding: 0 60px 0 0;
+      font-family: "mont-reg";
     }
   }
 

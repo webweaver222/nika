@@ -3,9 +3,9 @@ import Project from "./project";
 
 const EasyCycle = styled(Project)`
   background-color: #d64847;
-  margin-top: 20px;
 
   .project-text {
+    color: #fff;
     display: ${(props: { easyCycleInView: boolean }) =>
       props.easyCycleInView ? "block" : "none"};
   }

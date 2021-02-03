@@ -113,27 +113,7 @@ html, body {
     justify-content: space-between;
 }
 
-.header-text{
-    position: absolute;
-    left: 150px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    width: 300px;
-  }
 
-  .header-text h2, .project-text h2 {
-    color: #fff;
-    font-size: 80px;
-    margin-bottom: 15px;
-    font-family: "mont-bold";
-  }
-
-  .header-text p, .project-text p {
-    color: #fff;
-    font-size: 25px;
-    line-height: 34px;
-  }
 
 `;
 

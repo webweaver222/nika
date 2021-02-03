@@ -13,12 +13,10 @@ import megasport2 from "resources/images/megasport/megasport2.png";
 
 const Projects = ({ history }: { history: History }) => {
   const { ref: easyCycleRef, inView: easyCycleInView } = useInView({
-    /* Optional options */
     threshold: 0.33,
   });
 
   const { ref: megasportRef, inView: megasportInView } = useInView({
-    /* Optional options */
     threshold: 0.33,
   });
 
