@@ -1,19 +1,27 @@
 import styled from "styled-components";
 
 const Project = styled.div`
-  height: 60vh;
+  height: calc(70vh + 20px);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
   z-index: 0;
+  margin-top: 20px;
+
+  .project-content {
+    width: 1050px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
 
   .project-text {
     position: relative;
     z-index: 2;
     width: 350px;
-    margin-right: 70px;
+    margin: auto 30px auto 0;
     animation: fadein 1s;
 
     h2 {
@@ -50,10 +58,14 @@ const Project = styled.div`
   .section-img {
     position: relative;
     z-index: 2;
-    height: 500px;
+    height: 600px;
   }
 
   @media only screen and (min-width: 1600px) {
+    .project-content {
+      width: 1250px;
+    }
+
     .project-text {
       margin-right: 170px;
     }

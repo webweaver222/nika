@@ -15,7 +15,7 @@ export function Html({ children, scripts }: React.PropsWithChildren<Html>) {
           content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1"
         />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>React Starter Pack</title>
+        <title>Adonika</title>
       </head>
       <body>
         <div id="loader">

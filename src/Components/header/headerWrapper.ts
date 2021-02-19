@@ -3,6 +3,7 @@ import styled from "styled-components";
 import line from "resources/images/header/line.png";
 
 const HeaderWrapper = styled.div`
+  --red: #ff2f37;
   height: 100vh;
   display: flex;
   font-family: "mont-bold";
@@ -59,7 +60,7 @@ const HeaderWrapper = styled.div`
     font-size: 115px;
     margin-top: 21px;
 
-    .uiux, .designer {
+    .uiux, .designer, .hello {
       position: relative;
       z-index: 0;
       padding-left: 95px;
@@ -91,9 +92,9 @@ const HeaderWrapper = styled.div`
       }
     }
 
-    .designer {
+    .designer, .hello {
 
-      .i-letter {
+      .i-letter, .x-clam {
         position: relative;
 
         ::before {
@@ -102,7 +103,7 @@ const HeaderWrapper = styled.div`
           width: 23px;
           height: 21px;
           border-radius: 50%;
-          background-color: #ff2f37;
+          background-color: var(--red);
           top: 19px;
           left: 6px;
         }
@@ -142,6 +143,25 @@ const HeaderWrapper = styled.div`
     }
   }
 
+  .shevrone-block {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    animation: upAndDown 2s linear infinite;
+    padding-bottom: 7px;
+    
+
+  
+    img{
+        width: 40px; 
+        cursor: pointer;
+         
+    }
+  }
+
   @media only screen and (min-width: 1600px) {
 
     header {
@@ -166,6 +186,8 @@ const HeaderWrapper = styled.div`
      
       right: 19%;
     }
+
+
   }
 `;
 

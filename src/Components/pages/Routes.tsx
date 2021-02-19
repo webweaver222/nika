@@ -3,6 +3,7 @@ import { ComponentType } from "react";
 import { RouteComponentProps } from "react-router-dom";
 
 import Home from "./home";
+import About from "./about";
 import Project from "./project";
 
 interface Route {
@@ -22,6 +23,11 @@ export const Pages: Array<Route> = [
     link: "/",
     title: "Home",
     component: Home,
+  },
+  {
+    link: "/about",
+    title: "About",
+    component: About,
   },
   {
     link: "/easycycle",

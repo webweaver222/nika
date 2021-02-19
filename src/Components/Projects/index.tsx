@@ -27,22 +27,24 @@ const Projects = ({ history }: { history: History }) => {
         ref={easyCycleRef}
         onClick={() => history.push("easycycle")}
       >
-        <div className="project-text">
-          <h2>Easycycle - </h2>
-          <p>Moscow based company for bicycle sharing</p>
-        </div>
+        <div className="project-content">
+          <div className="project-text">
+            <h2>Easycycle - </h2>
+            <p>Moscow based company for bicycle sharing</p>
+          </div>
 
-        <div className="project-images">
-          <img
-            src={easycycle1}
-            alt="easycycle1"
-            className="section-img easycycle1"
-          />
-          <img
-            src={easycycle2}
-            alt="easycycle2"
-            className="section-img easycycle2"
-          />
+          <div className="project-images">
+            <img
+              src={easycycle1}
+              alt="easycycle1"
+              className="section-img easycycle1"
+            />
+            <img
+              src={easycycle2}
+              alt="easycycle2"
+              className="section-img easycycle2"
+            />
+          </div>
         </div>
         <div className="project-shading"></div>
       </EasyCycle>
@@ -53,22 +55,24 @@ const Projects = ({ history }: { history: History }) => {
         megasportInView={megasportInView}
         onClick={() => history.push("megasport")}
       >
-        <div className="project-text">
-          <h2>MEGASPORT</h2>
-          <p>E-commerce mobile app</p>
-        </div>
+        <div className="project-content">
+          <div className="project-text">
+            <h2>Megasport</h2>
+            <p>E-commerce mobile app</p>
+          </div>
 
-        <div className="project-images">
-          <img
-            src={megasport1}
-            alt="megasport1"
-            className="section-img megasport1"
-          />
-          <img
-            src={megasport2}
-            alt="megasport2"
-            className="section-img megasport2"
-          />
+          <div className="project-images">
+            <img
+              src={megasport1}
+              alt="megasport1"
+              className="section-img megasport1"
+            />
+            <img
+              src={megasport2}
+              alt="megasport2"
+              className="section-img megasport2"
+            />
+          </div>
         </div>
         <div className="project-shading"></div>
       </Megasport>

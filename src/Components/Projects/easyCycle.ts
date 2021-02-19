@@ -3,6 +3,7 @@ import Project from "./project";
 
 const EasyCycle = styled(Project)`
   background-color: #d64847;
+  margin-top: 0;
 
   .project-text {
     color: #fff;

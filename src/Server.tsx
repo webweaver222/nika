@@ -17,10 +17,7 @@ fs.readdirSync("./dist/assets").forEach((file) => {
   if (file.split(".").pop() === "js") jsFiles.push("/assets/" + file);
 });
 
-server.use(
-  "/favicon.ico",
-  express.static("./src/resources/images/favicon.ico")
-);
+server.use("/favicon.ico", express.static("resources/images/favicon.ico"));
 server.use("/assets", express.static("./dist/assets"));
 
 server.get("*", async (req, res) => {
