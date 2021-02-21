@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import HeaderTag from "./headerTag";
 import HeaderWrapper from "./headerWrapper";
 import HeaderContainer from "../hoc/headerContainer";
 
@@ -12,15 +12,7 @@ const Header: React.SFC = ({
   onShevroneClick,
 }: any) => (
   <HeaderWrapper ref={header}>
-    <header>
-      <div className="logo-text">Veronika adonieva</div>
-      <nav>
-        <span>home</span>
-        <span>
-          <Link to="/about">about</Link>
-        </span>
-      </nav>
-    </header>
+    <HeaderTag />
 
     <div className="flex-composition">
       <div className="header-text">

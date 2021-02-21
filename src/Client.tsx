@@ -6,6 +6,8 @@ import GlobalStyles from "./Components/globalStyles";
 import { BrowserRouter } from "react-router-dom";
 
 import "./Html/scripts";
+import "@fortawesome/fontawesome-free/js/fontawesome";
+import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/brands";
 
 const entryBlock = document.getElementById("root");

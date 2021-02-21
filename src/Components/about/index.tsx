@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AboutWrapper from "./aboutWrapper";
+import HeaderTag from "../header/headerTag";
 
 import photo from "resources/images/header/photo.png";
+import { json } from "express";
 
 const About: React.SFC = () => {
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+
+  const [data, setData] = useState({
+    phone: "058-498-6862",
+    email: "adveronika69@gmail.com",
+    linkdin: "https://www.linkedin.com/in/veronika-adonieva-a263a166",
+  });
+
+  useEffect(() => {
+    fetch(`${origin}/userdata`)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        }
+      })
+      .then((json) => {
+        setData(json);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <AboutWrapper>
-      <header>
-        <div className="logo-text">Veronika adonieva</div>
-        <nav>
-          <span>home</span>
-          <span>about</span>
-        </nav>
-      </header>
+      <HeaderTag />
 
       <div className="flex">
         <div className="flex-composition">
@@ -21,6 +40,8 @@ const About: React.SFC = () => {
               Hello<span className="x-clam">!</span>
             </div>
           </div>
+
+          <h3>Hey! My name is Veronika, I’m UI and UX designer.</h3>
 
           <p className="description">
             After graduating Architecture faculty, I worked on my specialty for
@@ -44,14 +65,25 @@ const About: React.SFC = () => {
             growth, which will also help my partners achieve their business
             goals.
           </p>
-
-          <div className="contacts">
-            <button className="cvfile">Download My CV</button>
-            <div className="linkdin"></div>
-          </div>
         </div>
         <div className="photo-wrapper">
           <img src={photo} alt="facePhoto" />
+        </div>
+      </div>
+      <div className="contacts">
+        <a className="cvfile" href={`${origin}/cvfile`} download>
+          Download My CV
+        </a>
+        <a href={data.linkdin}>
+          <i className="fab fa-linkedin"></i>
+        </a>
+        <div className="phone">
+          <i className="fas fa-phone-alt"></i>
+          <span>{data.phone}</span>
+        </div>
+        <div className="mail">
+          <i className="fas fa-envelope"></i>
+          <span>{data.email}</span>
         </div>
       </div>
     </AboutWrapper>

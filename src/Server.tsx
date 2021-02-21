@@ -20,6 +20,20 @@ fs.readdirSync("./dist/assets").forEach((file) => {
 server.use("/favicon.ico", express.static("resources/images/favicon.ico"));
 server.use("/assets", express.static("./dist/assets"));
 
+server.use("/cvfile", express.static("./src/resources/userdata/cv.docx"));
+
+server.get("/userdata", (req, res) => {
+  fs.readFile("./src/resources/userdata/data.json", "utf-8", (err, data) => {
+    if (err) {
+      res.end();
+    }
+
+    let json = JSON.parse(data);
+
+    res.send(JSON.stringify(json));
+  });
+});
+
 server.get("*", async (req, res) => {
   console.log(req.url);
 
