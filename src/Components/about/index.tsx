@@ -3,16 +3,16 @@ import AboutWrapper from "./aboutWrapper";
 import HeaderTag from "../header/headerTag";
 
 import photo from "resources/images/header/photo.png";
-import { json } from "express";
 
 const About: React.SFC = () => {
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const [data, setData] = useState(null);
+  const [origin, setOrigin] = useState(null);
 
-  const [data, setData] = useState({
+  const initData = {
     phone: "058-498-6862",
     email: "adveronika69@gmail.com",
     linkdin: "https://www.linkedin.com/in/veronika-adonieva-a263a166",
-  });
+  };
 
   useEffect(() => {
     fetch(`${origin}/userdata`)
@@ -26,7 +26,9 @@ const About: React.SFC = () => {
       })
       .catch((err) => {
         console.log(err);
+        setData(initData);
       });
+    setOrigin(window.location.origin);
   }, []);
 
   return (
@@ -74,16 +76,16 @@ const About: React.SFC = () => {
         <a className="cvfile" href={`${origin}/cvfile`} download>
           Download My CV
         </a>
-        <a href={data.linkdin}>
+        <a href={data && data.linkdin}>
           <i className="fab fa-linkedin"></i>
         </a>
         <div className="phone">
           <i className="fas fa-phone-alt"></i>
-          <span>{data.phone}</span>
+          <span>{data && data.phone}</span>
         </div>
         <div className="mail">
           <i className="fas fa-envelope"></i>
-          <span>{data.email}</span>
+          <span>{data && data.email}</span>
         </div>
       </div>
     </AboutWrapper>
