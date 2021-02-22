@@ -73,7 +73,7 @@ const About: React.SFC = () => {
         </div>
       </div>
       <div className="contacts">
-        <a className="cvfile" href={`${origin}/cvfile`} download>
+        <a className="cvfile" href={`${origin}/nika/cvfile`} download>
           Download My CV
         </a>
         <a href={data && data.linkdin}>
