@@ -16,7 +16,7 @@ const renderFunction: ReactDOM.Renderer = entryBlock.hasChildNodes()
   : ReactDOM.render;
 
 renderFunction(
-  <BrowserRouter basename="/nika">
+  <BrowserRouter basename="/adonika">
     <GlobalStyles />
     <App />
   </BrowserRouter>,

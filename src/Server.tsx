@@ -9,8 +9,8 @@ import { ServerStyleSheet } from "styled-components";
 
 import App from "./Components/app";
 
-const port = 8082;
-const basename = "/nika";
+const port = 3003;
+const basename = "/adonika";
 const server = express();
 const jsFiles: Array<string> = [];
 
@@ -44,7 +44,7 @@ server.get("*", async (req, res) => {
   const sheet = new ServerStyleSheet();
   const jsx = sheet.collectStyles(
     <Html scripts={jsFiles}>
-      <StaticRouter location={req.url.replace("/nika", "")} context={{}}>
+      <StaticRouter location={req.url} context={{}}>
         <App />
       </StaticRouter>
     </Html>
