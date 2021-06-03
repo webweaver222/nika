@@ -44,7 +44,7 @@ server.get("*", async (req, res) => {
   const sheet = new ServerStyleSheet();
   const jsx = sheet.collectStyles(
     <Html scripts={jsFiles}>
-      <StaticRouter location={req.url} context={{}}>
+      <StaticRouter location={req.url.replace(basename, "")} context={{}}>
         <App />
       </StaticRouter>
     </Html>
