@@ -15,7 +15,7 @@ const About: React.SFC = () => {
   };
 
   useEffect(() => {
-    fetch(`/nika/userdata`)
+    fetch(`/adonika/userdata`)
       .then((res) => {
         if (res.ok) {
           return res.json();
@@ -73,7 +73,7 @@ const About: React.SFC = () => {
         </div>
       </div>
       <div className="contacts">
-        <a className="cvfile" href={`/nika/cvfile`} download>
+        <a className="cvfile" href={`/adonika/cvfile`} download>
           Download My CV
         </a>
         <a href={data && data.linkdin}>
