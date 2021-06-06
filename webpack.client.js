@@ -60,7 +60,7 @@ module.exports = (env, argv) => {
         ? "assets/[name].[hash].js"
         : "assets/[name].[chunkhash].js",
       path: path.resolve(__dirname, "dist"),
-      publicPath: "/adonika/",
+      publicPath: "/",
     },
     performance: {
       hints: false,

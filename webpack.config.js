@@ -20,7 +20,7 @@ module.exports = (env) => {
           loader: "file-loader",
           options: {
             name: "[name].[ext]",
-            outputPath: "adonika",
+            outputPath: "assets",
           },
         },
       ],
