@@ -121,16 +121,21 @@ html, body {
 }
 
 .container {
-    padding: 0 40px;
-    min-width: 100%;
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
+    //display: flex;
+    //justify-content: space-between;
 }
 
-
+@media only screen and (min-width: 1600px) {
+    .container {
+        width: 1450px;
+}
+}
 
 `;
 

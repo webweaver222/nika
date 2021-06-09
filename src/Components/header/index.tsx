@@ -12,40 +12,42 @@ const Header: React.SFC = ({
   onShevroneClick,
 }: any) => (
   <HeaderWrapper ref={header}>
-    <HeaderTag />
+    <div className="container">
+      <HeaderTag />
 
-    <div className="flex-composition">
-      <div className="header-text">
-        <span className="welcome">Hey. my name is Veronika</span>
-        <div className="designer-composition">
-          <div className="uiux">
-            UI
-            <span>/</span>
-            UX
+      <div className="flex-composition">
+        <div className="header-text">
+          <span className="welcome">Hey. my name is Veronika</span>
+          <div className="designer-composition">
+            <div className="uiux">
+              UI
+              <span>/</span>
+              UX
+            </div>
+            <div className="designer">
+              Des<span className="i-letter">i</span>
+              <span className="g-letter">g</span>ner
+            </div>
           </div>
-          <div className="designer">
-            Des<span className="i-letter">i</span>
-            <span className="g-letter">g</span>ner
-          </div>
+          <p className="description">
+            I’m a person with a strong passion to the simple and clear things.
+            Allways trying to add to my surrounding area a little bit harmony.
+          </p>
+          <p className="description description-long">
+            My dream is to create quality digital things, which would help
+            another people to improve their lives
+          </p>
         </div>
-        <p className="description">
-          I’m a person with a strong passion to the simple and clear things.
-          Allways trying to add to my surrounding area a little bit harmony.
-        </p>
-        <p className="description description-long">
-          My dream is to create quality digital things, which would help another
-          people to improve their lives
-        </p>
       </div>
-    </div>
-    <div
-      className="vertical-banner"
-      style={{ transform: `translateY(calc(-50% + ${parallaxOffset}px))` }}
-    >
-      <img src={banner} alt="" />
-    </div>
-    <div className="shevrone-block">
-      <img src={shevrone} alt="shevrone" onClick={onShevroneClick} />
+      <div
+        className="vertical-banner"
+        style={{ transform: `translateY(calc(-50% + ${parallaxOffset}px))` }}
+      >
+        <img src={banner} alt="" />
+      </div>
+      <div className="shevrone-block">
+        <img src={shevrone} alt="shevrone" onClick={onShevroneClick} />
+      </div>
     </div>
   </HeaderWrapper>
 );

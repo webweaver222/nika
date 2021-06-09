@@ -3,23 +3,19 @@ import styled from "styled-components";
 import line from "resources/images/header/line.png";
 
 const HeaderWrapper = styled.div`
-  --red: #ff2f37;
   height: 100vh;
   display: flex;
   font-family: "mont-bold";
   color: #231f20;
-  position: relative;
+  
   
 
   header {
-    position: absolute;
     width: 100%;
-    top: 0;
     display: flex;
-    z-index:6;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 64px 200px 0 200px;
+    padding: 65px 0 80px 0;
 
     .logo-text {
       color: #c8c8c8;
@@ -39,21 +35,15 @@ const HeaderWrapper = styled.div`
           }
 
           :hover {
-            border-bottom: 3px solid red;
+            border-bottom: 3.6px solid red;
           }
         }
     }
   }
 
-  .flex-composition {
-    margin: auto 0;
-    padding: 0 100px;
-  }
-
   .welcome, .description {
     font-family: "mont-reg";
     font-size: 18px;
-    padding-left: 100px;
   }
 
   .designer-composition {
@@ -62,8 +52,9 @@ const HeaderWrapper = styled.div`
 
     .uiux, .designer, .hello {
       position: relative;
-      z-index: 0;
-      padding-left: 95px;
+      z-index: -1;
+      left: -8px;
+
 
       ::before {
         content: "";
@@ -72,8 +63,9 @@ const HeaderWrapper = styled.div`
         width: 698px;
         height: 1px;
         bottom: 15px;
-        left: 0;
-        background-image: url(${line});
+        left: -75px;
+        background: url(${line}) no-repeat left;
+        
       }
 
     }   
@@ -85,6 +77,7 @@ const HeaderWrapper = styled.div`
       span {
         position: relative;
         z-index: 5;
+        margin: 0 6px;
       }
 
       ::before {
@@ -118,28 +111,27 @@ const HeaderWrapper = styled.div`
 
   p.description {
     margin-top: 32px;
-    max-width: 700px;
+    max-width: 600px;
     line-height: 32px;
 
   }
 
   p.description-long {
     margin-top: 0;
-    max-width: 800px;
+    max-width: 700px;
   }
 
 
 
   .vertical-banner {
     position: absolute;
-    z-index: 0;
-    right: 23%;
-    top: 50%;
+    z-index: -2;
+    right: 13%;
+    top: 47%;
     transform:translate(0, -50%);
 
     img {
-      width: 189px;
-      height: 638px;
+      height: 580px;
     }
   }
 
@@ -165,12 +157,11 @@ const HeaderWrapper = styled.div`
   @media only screen and (min-width: 1600px) {
 
     header {
-      padding-left: 250px;
-      padding-right: 250px;
+      padding-top: 90px;
     }
 
     .flex-composition {
-      padding: 0 150px;
+      padding-top: 30px;
       .designer {
         ::before{
           bottom: 16px;

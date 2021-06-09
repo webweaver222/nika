@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const HeaderTag: React.SFC = () => {
+  //return null;
   return (
     <header>
       <div className="logo-text">Veronika adonieva</div>
