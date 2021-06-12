@@ -10,14 +10,16 @@ padding-bottom: 152px;
 
 
 .flex {
-    margin-top: 190px;
+    
     width: 100%;
-    padding-right: 200px;
+    margin-top: 20px;
 
     .photo-wrapper {
     width: 450px;
     height: 450px;
     box-shadow: inset 0px 0px 90px rgba(0,0,0, 0.7);
+    position: relative;
+    top: 10px;
 
     img {
         width: 100%;
@@ -31,7 +33,7 @@ padding-bottom: 152px;
 
   h3 {
     margin-top: 80px;
-    padding-left: 100px;
+    //padding-left: 100px;
   }
 
   p.description {
@@ -51,7 +53,7 @@ padding-bottom: 152px;
     width: 698px;
     height: 1px;
     top: 17px;
-    left: 0;
+    left: -75px;
     background-image: url(${line});
   }
 
@@ -78,10 +80,10 @@ padding-bottom: 152px;
 }
 
 .contacts {
-        margin-top: 37px;
+        margin-top: 45px;
         display: flex;
         align-items: center;
-        padding-left: 200px;
+        //padding-left: 200px;
         
           
         .phone, .mail {
@@ -132,7 +134,14 @@ padding-bottom: 152px;
 
       }
 
+      @media only screen and (min-width: 1600px) {
+        .flex {
+        .photo-wrapper {
+            top: 25px;
+        }
+        }
 
+      }
 
 `;
 

@@ -117,8 +117,8 @@ html, body {
 }
 
 .flex {
-    //display: flex;
-    //justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 1600px) {
