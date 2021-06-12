@@ -5,7 +5,7 @@ import Loader from "../../loader";
 const ProjectWrapper = styled.div`
   img {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: block;
     visibility: ${(props) => (props.loaded ? "visible" : "hidden")};
   }
