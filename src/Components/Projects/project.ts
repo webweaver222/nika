@@ -1,40 +1,36 @@
 import styled from "styled-components";
 
 const Project = styled.div`
-  height: calc(70vh + 20px);
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
   z-index: 0;
-  margin-top: 20px;
+  margin-top: 2px;
 
   .project-content {
-    width: 1050px;
     display: flex;
-    justify-content: flex-start;
-    position: relative;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .project-text {
-    position: relative;
-    z-index: 2;
-    width: 350px;
-    margin: auto 30px auto 0;
-    animation: fadein 1s;
+    margin: auto 0 auto 0;
+    animation: fadein 1.4s;
 
     h2 {
-      font-size: 40px;
-      letter-spacing: 3px;
+      font-size: 50px;
+      letter-spacing: 2px;
       font-family: "mont-bold";
       margin-bottom: 25px;
+      text-transform: uppercase;
     }
     p {
-      font-size: 16px;
+      font-size: 24px;
       letter-spacing: 1px;
-      line-height: 25px;
-      padding: 0 60px 0 0;
+      //padding: 0 60px 0 0;
       font-family: "mont-reg";
     }
   }
@@ -55,19 +51,25 @@ const Project = styled.div`
     background-color: rgba(0, 0, 0, 0.07);
   }
 
+  .project-images {
+    //height: 100%;
+    //position: relative;
+    display: flex;
+    align-items: flex-end;
+  }
+
   .section-img {
     position: relative;
-    z-index: 2;
-    height: 600px;
+    //z-index: 2;
   }
 
   @media only screen and (min-width: 1600px) {
     .project-content {
-      width: 1250px;
+      //width: 1250px;
     }
 
     .project-text {
-      margin-right: 170px;
+      //margin-right: 170px;
     }
   }
 `;

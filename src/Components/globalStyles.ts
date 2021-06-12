@@ -64,17 +64,7 @@ a {
     to  { opacity: 1}  
 }
 
-@keyframes fadeInUp {
-    from {opacity: 0; bottom: -120px;}
-        
-    to  { opacity: 1; bottom: -65px;}  
-}
 
-@keyframes fadeInDown {
-    from {opacity: 0; top: -120px;}
-        
-    to  { opacity: 1; top: -65px;}  
-}
 
 @keyframes upAndDown {
     0%, 100% {
@@ -133,7 +123,7 @@ html, body {
 
 @media only screen and (min-width: 1600px) {
     .container {
-        width: 1450px;
+        width: 1350px;
 }
 }
 

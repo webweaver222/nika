@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectsWrapper = styled.div`
+/*const ProjectsWrapper = styled.div`
   //margin-top: 20px;
 
   .easycycle {
@@ -42,25 +42,6 @@ const ProjectsWrapper = styled.div`
     display: ${(props) => (props.easyCycleInView ? "block" : "none")};
   }
 
-  .easycycle1,
-  .easycycle2 {
-    position: relative;
-    z-index: 2;
-    height: 500px;
-  }
-
-  .easycycle1 {
-    display: ${(props) => (props.easyCycleInView ? "inline-block" : "none")};
-    bottom: -65px;
-    animation: fadeInUp 0.7s;
-  }
-
-  .easycycle2 {
-    display: ${(props) => (props.easyCycleInView ? "inline-block" : "none")};
-    top: -65px;
-    animation: fadeInDown 0.7s;
-  }
-
   .project .project-text h2 {
     font-size: 40px;
     letter-spacing: 3px;
@@ -74,4 +55,4 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
-export default ProjectsWrapper;
+export default ProjectsWrapper;*/

@@ -17,6 +17,7 @@ interface Route {
 
 import easyCycle from "resources/images/easycycle/easycycleBig.png";
 import megasport from "resources/images/megasport/megasportBig.png";
+import casino from "resources/images/casino/casinoBig.jpg";
 
 export const Pages: Array<Route> = [
   {
@@ -38,5 +39,10 @@ export const Pages: Array<Route> = [
     link: "/megasport",
     title: "Project",
     component: () => <Project imgUrl={megasport} />,
+  },
+  {
+    link: "/casino",
+    title: "Project",
+    component: () => <Project imgUrl={casino} />,
   },
 ];
