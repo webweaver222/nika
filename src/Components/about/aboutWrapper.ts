@@ -80,7 +80,7 @@ padding-bottom: 152px;
 }
 
 .contacts {
-        margin-top: 45px;
+        margin-top: 64px;
         display: flex;
         align-items: center;
         //padding-left: 200px;
