@@ -134,7 +134,7 @@ padding-bottom: 152px;
 
       }
 
-      @media only screen and (min-width: 1600px) {
+      @media only screen and (min-width: 1700px) {
         .flex {
         .photo-wrapper {
             top: 25px;

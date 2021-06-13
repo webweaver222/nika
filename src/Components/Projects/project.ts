@@ -21,7 +21,7 @@ const Project = styled.div`
     animation: fadein 1.4s;
 
     h2 {
-      font-size: 50px;
+      font-size: 60px;
       letter-spacing: 2px;
       font-family: "mont-bold";
       margin-bottom: 25px;

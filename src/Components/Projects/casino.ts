@@ -25,31 +25,34 @@ const Casino = styled(Project)`
   }
 
   img.casino1 {
-    height: 550px;
+    margin: auto 0;
+    width: 700px;
     z-index: 2;
     animation: fadeInRightCasino1 0.7s;
     z-index: 2;
-    right: -70px;
+    right: 30px;
+    //top: 40px;
   }
 
   img.casino2 {
     position: absolute;
-    width: 360px;
-    top: -20px;
-    right: -70px;
+    width: 340px;
+    right: -40px;
     animation: fadeInLeftCasino2 0.9s;
     z-index: 3;
+    top: calc(50% - 50px);
+    transform: translateY(-50%);
   }
 
   @keyframes fadeInRightCasino1 {
     from {
       opacity: 0;
-      right: 0;
+      right: 60px;
     }
 
     to {
       opacity: 1;
-      right: -70px;
+      right: 30px;
     }
   }
 
@@ -61,11 +64,11 @@ const Casino = styled(Project)`
 
     to {
       opacity: 1;
-      right: -70px;
+      right: -40px;
     }
   }
 
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1700px) {
     img.casino1 {
       height: 650px;
     }

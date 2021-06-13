@@ -121,7 +121,7 @@ html, body {
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1700px) {
     .container {
         width: 1350px;
 }
