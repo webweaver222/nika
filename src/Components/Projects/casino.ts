@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import Project from "./project";
+import bg from "resources/images/casino/bg.jpg";
 
 const Casino = styled(Project)`
   background-color: #de9924;
+  background: url(${bg}) no-repeat center;
+  background-size: cover;
 
   .project-images {
-    align-items: center;
+    align-items: flex-end;
   }
 
   .project-text {
@@ -25,56 +28,46 @@ const Casino = styled(Project)`
   }
 
   img.casino1 {
-    margin: auto 0;
-    width: 700px;
+    position: absolute;
+    animation: fadeInRightCasino1 1s;
     z-index: 2;
-    animation: fadeInRightCasino1 0.7s;
-    z-index: 2;
-    right: 30px;
-    //top: 40px;
+    left: 150px;
   }
 
   img.casino2 {
-    position: absolute;
-    width: 340px;
-    right: -40px;
-    animation: fadeInLeftCasino2 0.9s;
+    animation: fadeInLeftCasino2 1s;
     z-index: 3;
-    top: calc(50% - 50px);
-    transform: translateY(-50%);
+    bottom: -150px;
+    right: 50px;
   }
 
   @keyframes fadeInRightCasino1 {
     from {
       opacity: 0;
-      right: 60px;
     }
 
     to {
       opacity: 1;
-      right: 30px;
     }
   }
 
   @keyframes fadeInLeftCasino2 {
     from {
       opacity: 0;
-      right: -120px;
+      bottom: -250px;
     }
 
     to {
       opacity: 1;
-      right: -40px;
+      bottom: -150px;
     }
   }
 
   @media only screen and (min-width: 1700px) {
     img.casino1 {
-      height: 650px;
     }
 
     img.casino2 {
-      width: 440px;
     }
   }
 `;

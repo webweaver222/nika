@@ -65,7 +65,6 @@ a {
 }
 
 
-
 @keyframes upAndDown {
     0%, 100% {
     transform: translateY(0);
@@ -119,12 +118,6 @@ html, body {
 .flex {
     display: flex;
     justify-content: space-between;
-}
-
-@media only screen and (min-width: 1700px) {
-    .container {
-        width: 1350px;
-}
 }
 
 `;

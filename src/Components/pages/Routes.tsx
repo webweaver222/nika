@@ -5,6 +5,7 @@ import { RouteComponentProps } from "react-router-dom";
 import Home from "./home";
 import About from "./about";
 import Project from "./project";
+import EasyCycleProject from "./project/easycycle";
 
 interface Route {
   link: string;
@@ -15,9 +16,11 @@ interface Route {
     | React.FC;
 }
 
-import easyCycle from "resources/images/easycycle/easycycleBig.png";
+import easyCycle from "resources/images/easycycle/easycycleBig.jpg";
+import easyGif from "resources/images/easycycle/animation.gif";
 import megasport from "resources/images/megasport/megasportBig.png";
 import casino from "resources/images/casino/casinoBig.jpg";
+import fly from "resources/images/fly/flyBig.jpg";
 
 export const Pages: Array<Route> = [
   {
@@ -33,7 +36,7 @@ export const Pages: Array<Route> = [
   {
     link: "/easycycle",
     title: "Project",
-    component: () => <Project imgUrl={easyCycle} />,
+    component: () => <EasyCycleProject imgUrl={easyCycle} gifUrl={easyGif} />,
   },
   {
     link: "/megasport",
@@ -44,5 +47,10 @@ export const Pages: Array<Route> = [
     link: "/casino",
     title: "Project",
     component: () => <Project imgUrl={casino} />,
+  },
+  {
+    link: "/fly",
+    title: "Project",
+    component: () => <Project imgUrl={fly} />,
   },
 ];

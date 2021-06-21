@@ -14,7 +14,16 @@ const HeaderContainer = (Wrapped: ComponentType<any>) => (props: any) => {
   const onShevroneClick = () =>
     requestAnimationFrame(() => {
       const body = document.body;
-      if (body.scrollTop >= window.innerHeight) return;
+      if (
+        body.scrollTop >=
+        (90 *
+          Math.max(
+            document.documentElement.clientHeight,
+            window.innerHeight || 0
+          )) /
+          100
+      )
+        return;
 
       body.scrollTop += 15;
 

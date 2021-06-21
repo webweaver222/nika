@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Project = styled.div`
-  height: 88vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,23 +21,22 @@ const Project = styled.div`
     animation: fadein 1.4s;
 
     h2 {
-      font-size: 60px;
+      font-size: 50px;
       letter-spacing: 2px;
       font-family: "mont-bold";
       margin-bottom: 25px;
       text-transform: uppercase;
     }
     p {
-      font-size: 24px;
+      font-size: 21px;
       letter-spacing: 1px;
-      //padding: 0 60px 0 0;
       font-family: "mont-reg";
     }
   }
 
   .project-shading {
     position: absolute;
-    z-index: 1;
+    z-index: 8;
     width: 100%;
     height: 100%;
     top: 0;
@@ -52,15 +51,12 @@ const Project = styled.div`
   }
 
   .project-images {
-    //height: 100%;
-    //position: relative;
     display: flex;
     align-items: flex-end;
   }
 
   .section-img {
     position: relative;
-    //z-index: 2;
   }
 
   @media only screen and (min-width: 1600px) {

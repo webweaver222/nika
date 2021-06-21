@@ -20,40 +20,40 @@ const EasyCycle = styled(Project)`
   }
 
   img.easycycle1 {
-    bottom: -73px;
-    animation: fadeInUpEasycycle1 0.7s;
-    //right: -15px;
+    bottom: -130px;
+    animation: fadeInUpEasycycle1 1s;
+    right: -5px;
     z-index: 3;
   }
 
   img.easycycle2 {
-    animation: fadeInRightEasycycle2 0.7s;
+    animation: fadeInRightEasycycle2 1s;
     z-index: 2;
-    left: 93px;
-    bottom: -197px;
+    left: 160px;
+    bottom: -265px;
   }
 
   @keyframes fadeInUpEasycycle1 {
     from {
       opacity: 0;
-      bottom: -120px;
+      bottom: -230px;
     }
 
     to {
       opacity: 1;
-      bottom: -73px;
+      bottom: -130px;
     }
   }
 
   @keyframes fadeInRightEasycycle2 {
     from {
       opacity: 0;
-      left: 60px;
+      left: 57px;
     }
 
     to {
       opacity: 1;
-      left: 93px;
+      left: 160px;
     }
   }
 `;

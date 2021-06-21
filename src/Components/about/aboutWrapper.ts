@@ -12,7 +12,7 @@ padding-bottom: 152px;
 .flex {
     
     width: 100%;
-    margin-top: 20px;
+    margin-top: 180px;
 
     .photo-wrapper {
     width: 450px;
@@ -30,7 +30,7 @@ padding-bottom: 152px;
 }
 
 .flex-composition {
-
+  flex-direction: column;
   h3 {
     margin-top: 80px;
     //padding-left: 100px;
@@ -65,9 +65,9 @@ padding-bottom: 152px;
   .x-clam {
     ::before {
     
-      bottom: 28px;
+      bottom: 22px;
       top: initial;
-      left: 5px;
+      left: 4px;
      
     }
   }

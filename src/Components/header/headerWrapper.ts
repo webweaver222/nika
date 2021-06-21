@@ -3,19 +3,30 @@ import styled from "styled-components";
 import line from "resources/images/header/line.png";
 
 const HeaderWrapper = styled.div`
-  height: 100vh;
+  height: 90vh;
   display: flex;
   font-family: "mont-bold";
   color: #231f20;
+  position: relative;
   
-  
+  .flex-composition {
+      display: flex;
+      height: 100%;
+
+      .header-text {
+        margin: auto 0;
+      }
+  }
 
   header {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 65px 0 80px 0;
+    padding: 45px 0 60px 0;
 
     .logo-text {
       color: #c8c8c8;
@@ -43,11 +54,11 @@ const HeaderWrapper = styled.div`
 
   .welcome, .description {
     font-family: "mont-reg";
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .designer-composition {
-    font-size: 115px;
+    font-size: 95px;
     margin-top: 21px;
 
     .uiux, .designer, .hello {
@@ -62,7 +73,7 @@ const HeaderWrapper = styled.div`
         z-index: 3;
         width: 698px;
         height: 1px;
-        bottom: 15px;
+        bottom: 13px;
         left: -75px;
         background: url(${line}) no-repeat left;
         
@@ -81,7 +92,7 @@ const HeaderWrapper = styled.div`
       }
 
       ::before {
-        top: 17px;
+        top: 13px;
       }
     }
 
@@ -93,12 +104,12 @@ const HeaderWrapper = styled.div`
         ::before {
           position: absolute;
           content: '';
-          width: 23px;
-          height: 21px;
+          width: 20px;
+          height: 19px;
           border-radius: 50%;
           background-color: var(--red);
-          top: 19px;
-          left: 6px;
+          top: 16px;
+          left: 4px;
         }
       }
 
@@ -131,7 +142,7 @@ const HeaderWrapper = styled.div`
     transform:translate(0, -50%);
 
     img {
-      height: 580px;
+      height: 550px;
     }
   }
 
@@ -154,7 +165,7 @@ const HeaderWrapper = styled.div`
     }
   }
 
-  @media only screen and (min-width: 1600px) {
+  /*@media only screen and (min-width: 1600px) {
 
     header {
       padding-top: 90px;
@@ -179,7 +190,7 @@ const HeaderWrapper = styled.div`
     }
 
 
-  }
+  }*/
 `;
 
 export default HeaderWrapper;
