@@ -7,6 +7,7 @@ const EasyCycle = styled(Project)`
   margin-top: 0;
   background: url(${bg}) no-repeat center;
   background-size: cover;
+  //height: 751px;
 
   .project-text {
     color: #fff;
