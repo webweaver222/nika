@@ -21,6 +21,7 @@ import easyGif from "resources/images/easycycle/animation.gif";
 import megasport from "resources/images/megasport/megasportBig.png";
 import casino from "resources/images/casino/casinoBig.jpg";
 import fly from "resources/images/fly/flyBig.jpg";
+import wispa from "resources/images/wispa/wispaBig.jpg";
 
 export const Pages: Array<Route> = [
   {
@@ -52,5 +53,10 @@ export const Pages: Array<Route> = [
     link: "/fly",
     title: "Project",
     component: () => <Project imgUrl={fly} />,
+  },
+  {
+    link: "/wispa",
+    title: "Project",
+    component: () => <Project imgUrl={wispa} />,
   },
 ];

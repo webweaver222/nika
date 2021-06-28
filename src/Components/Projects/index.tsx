@@ -6,6 +6,8 @@ import EasyCycle from "./easyCycle";
 import Megasport from "./megasport";
 import Casino from "./casino";
 import Fly from "./fly";
+import Wispa from "./wispa";
+
 import { useInView } from "react-intersection-observer";
 import easycycle1 from "resources/images/easycycle/easycycle1.png";
 import easycycle2 from "resources/images/easycycle/easycycle2.png";
@@ -15,6 +17,8 @@ import casino1 from "resources/images/casino/casino1.png";
 import casino2 from "resources/images/casino/casino2.png";
 import fly1 from "resources/images/fly/fly1.png";
 import fly2 from "resources/images/fly/fly2.png";
+import wispa1 from "resources/images/wispa/wispa1.png";
+import wispa2 from "resources/images/wispa/wispa2.png";
 
 const Projects = ({ history }: { history: History }) => {
   const { ref: easyCycleRef, inView: easyCycleInView } = useInView({
@@ -30,6 +34,10 @@ const Projects = ({ history }: { history: History }) => {
   });
 
   const { ref: flyRef, inView: flyInView } = useInView({
+    threshold: 0.15,
+  });
+
+  const { ref: wispaRef, inView: wispaInView } = useInView({
     threshold: 0.25,
   });
 
@@ -127,6 +135,25 @@ const Projects = ({ history }: { history: History }) => {
         </div>
         <div className="project-shading"></div>
       </Fly>
+
+      <Wispa
+        easyCycleInView={wispaInView}
+        ref={wispaRef}
+        onClick={() => history.push("wispa")}
+      >
+        <div className="project-content container">
+          <div className="project-text">
+            <h2>Wispa</h2>
+            <p>Marketplace that connects the Air Jordan fans</p>
+          </div>
+
+          <div className="project-images">
+            <img src={wispa1} alt="wispa1" className="section-img wispa1" />
+            <img src={wispa2} alt="wispa1" className="section-img wispa2" />
+          </div>
+        </div>
+        {<div className="project-shading"></div>}
+      </Wispa>
     </>
   );
 };
