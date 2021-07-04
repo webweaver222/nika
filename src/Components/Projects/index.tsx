@@ -124,7 +124,7 @@ const Projects = ({ history }: { history: History }) => {
         <div className="project-content container">
           <div className="project-images">
             <img src={fly1} alt="fly1" className="section-img fly1" />
-            <img src={fly2} alt="fly1" className="section-img fly2" />
+            <img src={fly2} alt="fly2" className="section-img fly2" />
           </div>
 
           <div className="project-text">

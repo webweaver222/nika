@@ -52,7 +52,7 @@ padding-bottom: 152px;
     z-index: -1;
     width: 698px;
     height: 1px;
-    top: 17px;
+    top: 14px;
     left: -75px;
     background-image: url(${line});
   }
@@ -111,7 +111,7 @@ padding-bottom: 152px;
         }
         .fa-linkedin {
             font-size: 40px;
-            margin-left: 22px;
+            margin-left: 26px;
           }
 
         .cvfile {

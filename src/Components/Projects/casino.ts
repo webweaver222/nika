@@ -31,7 +31,7 @@ const Casino = styled(Project)`
     position: absolute;
     animation: fadeInRightCasino1 1s;
     z-index: 2;
-    left: 150px;
+    left: 158px;
   }
 
   img.casino2 {

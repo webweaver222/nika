@@ -26,7 +26,7 @@ const Wispa = styled(Project)`
   img.wispa1 {
     bottom: -180px;
     animation: fadeInWispa1 1s;
-    right: -25px;
+    right: -32px;
     z-index: 3;
   }
 
@@ -34,7 +34,7 @@ const Wispa = styled(Project)`
     animation: fadeInWispa2 1s;
     z-index: 2;
     position: absolute;
-    right: 250px;
+    right: 240px;
     bottom: -300px;
   }
 
@@ -46,7 +46,7 @@ const Wispa = styled(Project)`
 
     to {
       opacity: 1;
-      right: -25px;
+      right: -32px;
     }
   }
 

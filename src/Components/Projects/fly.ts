@@ -33,16 +33,21 @@ const Fly = styled(Project)`
 
   img.fly1 {
     animation: fadeInRightFly1 1s;
-    align-self: center;
-    width: 770px;
+    position: absolute;
+    width: 670px;
     z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 75px;
+    margin: auto 0;
+    padding-bottom: 50px;
   }
 
   img.fly2 {
-    width: 780px;
-    position: absolute;
-    left: -130px;
-    bottom: -60px;
+    width: 680px;
+    align-self: center;
+    left: -43px;
+    bottom: -80px;
     animation: fadeInLeftFly2 1s;
     z-index: 3;
   }
@@ -62,12 +67,12 @@ const Fly = styled(Project)`
   @keyframes fadeInLeftFly2 {
     from {
       opacity: 0;
-      left: -170px;
+      left: -120px;
     }
 
     to {
       opacity: 1;
-      left: -130px;
+      left: -43px;
     }
   }
 
