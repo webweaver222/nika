@@ -59,13 +59,28 @@ const Project = styled.div`
     position: relative;
   }
 
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (max-width: 480px) {
+    padding: 0 15px 0 15px;
+
+    .project-images {
+      margin-top: 30px;
+    }
+
     .project-content {
-      //width: 1250px;
+      flex-direction: column;
+      height: initial;
     }
 
     .project-text {
-      //margin-right: 170px;
+      text-align: center;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 12px;
+      }
     }
   }
 `;

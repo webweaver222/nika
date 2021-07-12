@@ -120,6 +120,9 @@ html, body {
     justify-content: space-between;
 }
 
+
+
+
 `;
 
 export default GlobalStyles;

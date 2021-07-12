@@ -23,7 +23,6 @@ const Megasport = styled(Project)`
   }
 
   img {
-    //width: 355px;
     display: ${(props: { megasportInView: boolean }) =>
       props.megasportInView ? "inline-block" : "none"};
   }
@@ -63,6 +62,61 @@ const Megasport = styled(Project)`
     to {
       opacity: 1;
       bottom: -150px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .project-content {
+      flex-direction: column-reverse;
+    }
+
+    .project-text {
+      text-align: center;
+    }
+
+    .project-images {
+      margin-top: 35px;
+      justify-content: center;
+    }
+
+    img {
+      width: 300px;
+    }
+
+    img.megasport1 {
+      position: absolute;
+      bottom: -20px;
+      left: 30px;
+    }
+
+    img.megasport2 {
+      top: -20px;
+      left: -30px;
+      z-index: 3;
+    }
+
+    @keyframes fadeInDownMega2 {
+      from {
+        opacity: 0;
+        left: -60px;
+      }
+
+      to {
+        opacity: 1;
+        left: -30px;
+      }
+    }
+
+    @keyframes fadeInUpMega1 {
+      from {
+        opacity: 0;
+        bottom: -90px;
+      }
+
+      to {
+        opacity: 1;
+        bottom: -20px;
+      }
     }
   }
 `;

@@ -29,13 +29,13 @@ const Casino = styled(Project)`
 
   img.casino1 {
     position: absolute;
-    animation: fadeInRightCasino1 1s;
+    //animation: fadeInRightCasino1 1s;
     z-index: 2;
     left: 158px;
   }
 
   img.casino2 {
-    animation: fadeInLeftCasino2 1s;
+    //animation: fadeInLeftCasino2 1s;
     z-index: 3;
     bottom: -150px;
     right: 50px;
@@ -63,11 +63,25 @@ const Casino = styled(Project)`
     }
   }
 
-  @media only screen and (min-width: 1700px) {
+  @media only screen and (max-width: 480px) {
+    .project-text {
+      text-align: center;
+    }
+
+    .project-images {
+      justify-content: center;
+    }
+
     img.casino1 {
+      width: 400px;
+      left: 0;
     }
 
     img.casino2 {
+      width: 300px;
+      bottom: 0;
+      left: 0;
+      right: initial;
     }
   }
 `;

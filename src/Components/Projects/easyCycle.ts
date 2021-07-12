@@ -7,7 +7,6 @@ const EasyCycle = styled(Project)`
   margin-top: 0;
   background: url(${bg}) no-repeat center;
   background-size: cover;
-  //height: 751px;
 
   .project-text {
     color: #fff;
@@ -55,6 +54,47 @@ const EasyCycle = styled(Project)`
     to {
       opacity: 1;
       left: 160px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    img {
+      width: 300px;
+    }
+
+    img.easycycle1 {
+      position: absolute;
+      bottom: 0;
+      right: -30px;
+    }
+
+    img.easycycle2 {
+      left: -30px;
+      bottom: -30px;
+    }
+
+    @keyframes fadeInUpEasycycle1 {
+      from {
+        opacity: 0;
+        bottom: -90px;
+      }
+
+      to {
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+
+    @keyframes fadeInRightEasycycle2 {
+      from {
+        opacity: 0;
+        left: -90px;
+      }
+
+      to {
+        opacity: 1;
+        left: -30px;
+      }
     }
   }
 `;

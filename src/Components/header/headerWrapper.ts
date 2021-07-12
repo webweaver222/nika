@@ -165,32 +165,76 @@ const HeaderWrapper = styled.div`
     }
   }
 
-  /*@media only screen and (min-width: 1600px) {
+  @media only screen and (max-width: 480px) {
+    padding: 0 15px;
 
     header {
-      padding-top: 90px;
+      align-items : center;
+      .logo-text {
+        font-size: 13px;
+      }
+      nav {
+        span {
+          padding: 8px;
+        font-size: 13px;
+        margin-right: 15px;
+      }
+      }
+      
     }
 
-    .flex-composition {
-      padding-top: 30px;
+    .welcome {
+      font-size: 14px;
+    }
+      
+    .designer-composition {
+      font-size: 65px;
+      margin-top: 31px;
+
+    
+      .uiux, .designer {
+        left: initial;
+
+        ::before {
+          top: 10px;
+          width: 350px;
+          left: -40px;
+        }
+      }
+
       .designer {
-        ::before{
-          bottom: 16px;
+        .i-letter {
+          ::before {
+            width: 13.5px;
+            height: 12.5px;
+            top: 12px;
+            left: 3px;
+          }
+        }
+        ::before {
+          top: initial;
+          bottom: 8px;
         }
       }
     }
 
-    .vertical-banner {
-      img {
-        width: calc(189px * 1.25);
-        height: calc(638px * 1.25);
-      }
-     
-      right: 19%;
+    p.description {
+      font-size: 13px;
     }
 
+    .vertical-banner {
+      right: 5%;
+       img {
+         height: 350px;
+       }
+    }
 
-  }*/
+    .shevrone-block {
+        img {
+          width: 30px;
+        }
+    }
+  }
 `;
 
 export default HeaderWrapper;
