@@ -150,6 +150,9 @@ padding-bottom: 152px;
             .photo-wrapper {
               width: 100%;
               height: initial;
+              img {
+                height: initial;
+              }
             }
 
             .flex-composition {
