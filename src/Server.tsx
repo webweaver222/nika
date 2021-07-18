@@ -23,7 +23,7 @@ server.use("/assets", express.static("./dist/assets"));
 
 server.use(
   basename + "/cvfile",
-  express.static("./src/resources/userdata/cv.docx")
+  express.static("./src/resources/userdata/cv.pdf")
 );
 
 server.get(basename + "/userdata", (req, res) => {
