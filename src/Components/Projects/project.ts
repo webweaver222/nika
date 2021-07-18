@@ -62,23 +62,22 @@ const Project = styled.div`
   @media only screen and (max-width: 480px) {
     padding: 0 15px 0 15px;
 
-    .project-images {
-      margin-top: 30px;
-    }
-
     .project-content {
       flex-direction: column;
-      height: initial;
+      justify-content: flex-start;
     }
 
     .project-text {
       text-align: center;
+      margin: 30px 0 0 0;
+
       h2 {
         font-size: 20px;
         margin-bottom: 15px;
       }
 
       p {
+        line-height: 17px;
         font-size: 12px;
       }
     }

@@ -67,7 +67,6 @@ const Megasport = styled(Project)`
 
   @media only screen and (max-width: 480px) {
     .project-content {
-      flex-direction: column-reverse;
     }
 
     .project-text {
@@ -75,23 +74,26 @@ const Megasport = styled(Project)`
     }
 
     .project-images {
-      margin-top: 35px;
       justify-content: center;
     }
 
     img {
       width: 300px;
+      transform: translate(0, -50%);
     }
 
     img.megasport1 {
       position: absolute;
-      bottom: -20px;
-      left: 30px;
+      bottom: initial;
+      top: calc(50% + 36px);
+      left: 25px;
     }
 
     img.megasport2 {
-      top: -20px;
-      left: -30px;
+      position: absolute;
+      bottom: initial;
+      top: 50%;
+      left: -25px;
       z-index: 3;
     }
 
@@ -103,19 +105,19 @@ const Megasport = styled(Project)`
 
       to {
         opacity: 1;
-        left: -30px;
+        left: -25px;
       }
     }
 
     @keyframes fadeInUpMega1 {
       from {
         opacity: 0;
-        bottom: -90px;
+        top: 62%;
       }
 
       to {
         opacity: 1;
-        bottom: -20px;
+        top: calc(50% + 36px);
       }
     }
   }

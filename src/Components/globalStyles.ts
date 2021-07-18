@@ -122,6 +122,11 @@ html, body {
 
 
 
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%
+    }
+}
 
 `;
 

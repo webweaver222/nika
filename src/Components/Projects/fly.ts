@@ -76,13 +76,57 @@ const Fly = styled(Project)`
     }
   }
 
-  @media only screen and (min-width: 1700px) {
-    img.casino1 {
-      //height: 650px;
+  @media only screen and (max-width: 480px) {
+    background-size: contain;
+
+    .project-text {
+      text-align: center;
+      .top {
+        margin-bottom: 5px;
+      }
     }
 
-    img.casino2 {
-      //width: 440px;
+    img {
+      transform: translate(-50%, -50%);
+    }
+
+    img.fly1 {
+      left: 45%;
+      top: 40%;
+      bottom: initial;
+      width: 300px;
+    }
+
+    img.fly2 {
+      position: absolute;
+      width: 300px;
+      left: 55%;
+      bottom: initial;
+      top: 60%;
+    }
+
+    @keyframes fadeInRightFly1 {
+      from {
+        opacity: 0;
+        left: -20%;
+      }
+
+      to {
+        opacity: 1;
+        left: 45%;
+      }
+    }
+
+    @keyframes fadeInLeftFly2 {
+      from {
+        opacity: 0;
+        left: 120%;
+      }
+
+      to {
+        opacity: 1;
+        left: 55%;
+      }
     }
   }
 `;

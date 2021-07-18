@@ -29,13 +29,13 @@ const Casino = styled(Project)`
 
   img.casino1 {
     position: absolute;
-    //animation: fadeInRightCasino1 1s;
+    animation: fadeInRightCasino1 1s;
     z-index: 2;
     left: 158px;
   }
 
   img.casino2 {
-    //animation: fadeInLeftCasino2 1s;
+    animation: fadeInLeftCasino2 1s;
     z-index: 3;
     bottom: -150px;
     right: 50px;
@@ -72,16 +72,46 @@ const Casino = styled(Project)`
       justify-content: center;
     }
 
+    img {
+      transform: translate(0, -50%);
+    }
+
     img.casino1 {
-      width: 400px;
-      left: 0;
+      top: 50%;
+      bottom: initial;
+      left: initial;
+      width: 700px;
+      position: absolute;
     }
 
     img.casino2 {
-      width: 300px;
-      bottom: 0;
-      left: 0;
-      right: initial;
+      position: absolute;
+      width: 150px;
+      top: 60%;
+      bottom: initial;
+      right: -15px;
+    }
+
+    @keyframes fadeInRightCasino1 {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInLeftCasino2 {
+      from {
+        opacity: 0;
+        right: -95px;
+      }
+
+      to {
+        opacity: 1;
+        right: -15px;
+      }
     }
   }
 `;

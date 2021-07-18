@@ -61,6 +61,62 @@ const Wispa = styled(Project)`
       bottom: -300px;
     }
   }
+
+  @media only screen and (max-width: 480px) {
+    .project-text {
+      p {
+        width: initial;
+        padding: 0 22px;
+      }
+    }
+
+    img {
+      width: 280px;
+      transform: translate(-50%, -50%);
+    }
+
+    img.wispa1 {
+      position: absolute;
+      bottom: initial;
+      right: initial;
+      top: 65%;
+      left: 45%;
+      z-index: 0;
+    }
+
+    img.wispa2 {
+      position: absolute;
+      bottom: initial;
+      right: initial;
+      top: 55%;
+      left: 55%;
+      z-index: 1;
+    }
+
+    @keyframes fadeInWispa1 {
+      from {
+        opacity: 0;
+        left: 0%;
+      }
+
+      to {
+        opacity: 1;
+        left: 45%;
+      }
+    }
+
+    @keyframes fadeInWispa2 {
+      from {
+        opacity: 0;
+        left: 120%;
+      }
+
+      to {
+        opacity: 1;
+        left: 55%;
+      }
+    }
+  }
 `;
 
 export default Wispa;

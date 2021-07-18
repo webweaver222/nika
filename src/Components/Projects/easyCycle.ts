@@ -16,7 +16,7 @@ const EasyCycle = styled(Project)`
 
   img {
     display: ${(props: { easyCycleInView: boolean }) =>
-      props.easyCycleInView ? "inline-block" : "none"};
+      props.easyCycleInView ? "block" : "none"};
   }
 
   img.easycycle1 {
@@ -60,28 +60,32 @@ const EasyCycle = styled(Project)`
   @media only screen and (max-width: 480px) {
     img {
       width: 300px;
+      transform: translate(0, -50%);
     }
 
     img.easycycle1 {
       position: absolute;
-      bottom: 0;
-      right: -30px;
+      right: -25px;
+      bottom: initial;
+      top: 50%;
     }
 
     img.easycycle2 {
-      left: -30px;
-      bottom: -30px;
+      position: absolute;
+      left: -25px;
+      bottom: initial;
+      top: calc(50% + 36px);
     }
 
     @keyframes fadeInUpEasycycle1 {
       from {
         opacity: 0;
-        bottom: -90px;
+        top: 40%;
       }
 
       to {
         opacity: 1;
-        bottom: 0;
+        top: 50%;
       }
     }
 
@@ -93,7 +97,7 @@ const EasyCycle = styled(Project)`
 
       to {
         opacity: 1;
-        left: -30px;
+        left: -25px;
       }
     }
   }
