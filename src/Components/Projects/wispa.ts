@@ -67,6 +67,7 @@ const Wispa = styled(Project)`
       p {
         width: initial;
         padding: 0 22px;
+        line-height: 20px;
       }
     }
 

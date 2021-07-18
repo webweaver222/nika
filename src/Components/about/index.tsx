@@ -79,7 +79,7 @@ const About: React.SFC = () => {
             Download My CV
           </a>
           <a href={data && data.linkdin}>
-            <i className="fab fa-linkedin"></i>
+            <div className="lnd"></div>
           </a>
           <div className="phone">
             <i className="fas fa-phone-alt"></i>

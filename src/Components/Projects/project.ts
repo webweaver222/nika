@@ -77,7 +77,7 @@ const Project = styled.div`
       }
 
       p {
-        line-height: 17px;
+        line-height: 14px;
         font-size: 12px;
       }
     }

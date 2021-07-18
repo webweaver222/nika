@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HeaderWrapper from "../header/headerWrapper";
 import line from "resources/images/header/line.png";
+import lnd from "resources/images/icons/lnd.png";
 
 const AboutWrapper = styled(HeaderWrapper)`
 
@@ -89,7 +90,7 @@ padding-bottom: 152px;
         .phone, .mail {
           display: flex;
           align-items: center;
-          margin-left: 32px;
+          margin-left: 28px;
           
           span {
             font-size: 16px;
@@ -109,9 +110,16 @@ padding-bottom: 152px;
             color: var(--light-gray)
           }
         }
-        .fa-linkedin {
-            font-size: 40px;
-            margin-left: 26px;
+        .lnd {
+            margin-left: 25px;
+            width: 37px;
+            height: 37px;
+            background: url(${lnd}) center no-repeat;
+            background-size: contain;
+
+            :hover {
+              opacity: 0.95;
+            }
           }
 
         .cvfile {
@@ -130,6 +138,67 @@ padding-bottom: 152px;
               background-color: var(--darken-red);
           }
         }
+
+
+      }
+
+      @media only screen and (max-width: 480px) {
+          padding-bottom: 50px;
+          .flex {
+            margin-top: 100px;
+            flex-direction: column-reverse;
+            .photo-wrapper {
+              width: 100%;
+              height: auto;
+            }
+
+            .flex-composition {
+              margin-top: 30px;
+              h3 {
+                  margin-top: 25px;
+                  text-align: center;
+                  line-height: 22px;
+                }
+
+              .designer-composition {
+                text-align: center;
+
+                .hello {
+                  ::before{
+                    width: 300px;
+                    left: 0;
+                    top: 9px;
+                  }
+
+                  .x-clam {
+                    ::before {
+                      bottom: 14px;
+                      width: 15px;
+                      height: 14px;
+                      left: 3px;
+                    }
+                  }
+
+                  ::after {
+                    width: 300px;
+                    left: 0;
+                    top: initial;
+                    bottom: 9px;
+                  }
+                }
+             
+              }
+             
+            }
+          }
+
+          .contacts {
+            flex-wrap: wrap;
+
+            .phone, .mail {
+              margin-top: 18px;
+            }
+          }
 
 
       }
