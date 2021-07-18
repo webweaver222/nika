@@ -149,7 +149,7 @@ padding-bottom: 152px;
             flex-direction: column-reverse;
             .photo-wrapper {
               width: 100%;
-              height: auto;
+              height: initial;
             }
 
             .flex-composition {
