@@ -66,6 +66,7 @@ const Casino = styled(Project)`
   @media only screen and (max-width: 480px) {
     .project-text {
       text-align: center;
+      margin-top: 60px;
     }
 
     .project-images {
@@ -80,13 +81,14 @@ const Casino = styled(Project)`
       top: 50%;
       bottom: initial;
       left: initial;
+      right: -20px;
       width: 700px;
       position: absolute;
     }
 
     img.casino2 {
       position: absolute;
-      width: 150px;
+      width: 200px;
       top: 60%;
       bottom: initial;
       right: -15px;

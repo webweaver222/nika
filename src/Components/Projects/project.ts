@@ -69,7 +69,7 @@ const Project = styled.div`
 
     .project-text {
       text-align: center;
-      margin: 30px 0 0 0;
+      margin: 43px 0 0 0;
 
       h2 {
         font-size: 20px;

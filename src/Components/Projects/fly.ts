@@ -81,6 +81,7 @@ const Fly = styled(Project)`
 
     .project-text {
       text-align: center;
+      margin-top: 55px;
       .top {
         margin-bottom: 5px;
       }
@@ -92,17 +93,17 @@ const Fly = styled(Project)`
 
     img.fly1 {
       left: 45%;
-      top: 40%;
+      top: 45%;
       bottom: initial;
-      width: 300px;
+      width: 350px;
     }
 
     img.fly2 {
       position: absolute;
-      width: 300px;
+      width: 350px;
       left: 55%;
       bottom: initial;
-      top: 60%;
+      top: 65%;
     }
 
     @keyframes fadeInRightFly1 {
