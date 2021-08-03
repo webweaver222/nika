@@ -30,12 +30,12 @@ const Header: React.SFC = ({
             </div>
           </div>
           <p className="description">
-            I’m a person with a strong passion to the simple and clear things.
-            Allways trying to add to my surrounding area a little bit harmony.
+            I’m a person with a strong passion to simple and clear things.
+            Always trying to add a little bit of harmony to my surrounding area
           </p>
           <p className="description description-long">
-            My dream is to create quality digital things, which would help
-            another people to improve their lives
+            My dream is to create quality digital things, which would help other
+            people to improve their lives
           </p>
         </div>
       </div>

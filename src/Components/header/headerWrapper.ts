@@ -128,7 +128,7 @@ const HeaderWrapper = styled.div`
   }
 
   p.description-long {
-    margin-top: 0;
+    margin-top: 10px;
     max-width: 700px;
   }
 

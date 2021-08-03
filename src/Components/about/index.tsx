@@ -50,17 +50,16 @@ const About: React.SFC = () => {
               After graduating Architecture faculty, I worked on my specialty
               for a year, but then I realized that digital design attracts me
               more. Since then I have started to do design, using my old
-              knowledge and getting the new ones. I’ve completed several courses
-              in graphic design, UI and UX, and continue my self developing
-              working as a web designer for an international company in Tel
-              Aviv.
+              knowledge and getting new ones. I’ve completed several courses in
+              graphic design, UI and UX, and continue my self developing working
+              as a web designer for an international company in Tel Aviv.
             </p>
 
             <p className="description" style={{ marginTop: "45px" }}>
               I came to design from architecture, and this fact had strong
-              influence on my thinking. Before creating something new, I allways
+              influence on my thinking. Before creating something new, I always
               think about user friendliness to build the most comfortable and
-              clear user experiance. Besides my current work, in my free time I
+              clear user experience. Besides my current work, in my free time I
               also have my own freelance projects.
             </p>
 
@@ -75,7 +74,11 @@ const About: React.SFC = () => {
           </div>
         </div>
         <div className="contacts">
-          <a className="cvfile" href={`/adonika/cvfile`} download>
+          <a
+            className="cvfile"
+            href={`/adonika/cvfile`}
+            download="cv_adonieva.pdf"
+          >
             Download My CV
           </a>
           <a href={data && data.linkdin}>
