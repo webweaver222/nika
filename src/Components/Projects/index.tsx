@@ -109,18 +109,8 @@ const Projects = ({ history }: { history: History }) => {
           </div>
 
           <div className="project-images">
-            <img
-              src={casino1}
-              alt="casino1"
-              className="section-img casino1"
-              loading="lazy"
-            />
-            <img
-              src={casino2}
-              alt="casino2"
-              className="section-img casino2"
-              loading="lazy"
-            />
+            <img src={casino1} alt="casino1" className="section-img casino1" />
+            <img src={casino2} alt="casino2" className="section-img casino2" />
           </div>
         </div>
         <div className="project-shading"></div>
@@ -133,18 +123,8 @@ const Projects = ({ history }: { history: History }) => {
       >
         <div className="project-content container">
           <div className="project-images">
-            <img
-              src={fly1}
-              alt="fly1"
-              className="section-img fly1"
-              loading="lazy"
-            />
-            <img
-              src={fly2}
-              alt="fly2"
-              className="section-img fly2"
-              loading="lazy"
-            />
+            <img src={fly1} alt="fly1" className="section-img fly1" />
+            <img src={fly2} alt="fly2" className="section-img fly2" />
           </div>
 
           <div className="project-text">
@@ -168,18 +148,8 @@ const Projects = ({ history }: { history: History }) => {
           </div>
 
           <div className="project-images">
-            <img
-              src={wispa1}
-              alt="wispa1"
-              className="section-img wispa1"
-              loading="lazy"
-            />
-            <img
-              src={wispa2}
-              alt="wispa1"
-              className="section-img wispa2"
-              loading="lazy"
-            />
+            <img src={wispa1} alt="wispa1" className="section-img wispa1" />
+            <img src={wispa2} alt="wispa1" className="section-img wispa2" />
           </div>
         </div>
         {<div className="project-shading"></div>}
